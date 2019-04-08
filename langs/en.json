@@ -1,0 +1,8 @@
+{
+  "ball": {
+    "args": "Please, insert arguments!"
+  },
+  "avatar": {
+    "download": "Wanna do download of image? Click [here](%userAvatar%)."
+  }
+}
