@@ -21,7 +21,8 @@
     "opusscript": "^0.0.6",
     "ytpl": "^0.1.14",
     "enmap": "^4.8.2",
-    "simple-youtube-api": "^5.1.1"
+    "simple-youtube-api": "^5.1.1",
+    "ffmpeg-binaries": "^4.0.0"
   },
   "engines": {
     "node": "10.x"
