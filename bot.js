@@ -71,10 +71,8 @@ client.on("message", async message => {
   let content = message.content.split(" ");
   let command = content[0];
   let args = content.slice(1);
-  let prefix = 'k!!'
-  if (message.guild ? await Guild.findOne({ guildID: message.guild.id }, (err, guild) => {
-    prefix = guild && guild.prefix ? guild.prefix : "k!!";
-  }) : prefix = "k!!", message.author.bot) return;
+  let prefix = 'h!!';
+  if (message.guild) { await Guild.findOne({ guildID: message.guild.id }, (err, guild) => { prefix = guild && guild.prefix ? guild.prefix : "h!!"; }) } else { prefix = "h!!" };
   
   if (0 !== message.content.indexOf(prefix)) return;
   
