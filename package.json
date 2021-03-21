@@ -11,18 +11,17 @@
   },
   "dependencies": {
     "express": "^4.16.4",
-    "discord.js": "^11.4.2",
-    "mongoose": "^5.4.20",
+    "discord.js": "^11.5.1",
+    "mongoose": "^5.5.12",
     "string-similarity": "^3.0.0",
-    "ytdl-core": "^0.29.0",
+    "ytdl-core": "^0.29.2",
     "get-youtube-id": "^1.0.1",
     "request": "^2.88.0",
     "moment": "^2.24.0",
     "opusscript": "^0.0.6",
     "ytpl": "^0.1.14",
-    "enmap": "^4.8.2",
-    "simple-youtube-api": "^5.1.1",
-    "ffmpeg-binaries": "^4.0.0"
+    "enmap": "^4.8.6",
+    "simple-youtube-api": "^5.1.1"
   },
   "engines": {
     "node": "10.x"

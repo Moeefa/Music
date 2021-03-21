@@ -218,7 +218,7 @@ exports.toggleLoop = (guildId, message, client) => {
 };
 
 async function playSong(connection, guildID) {  
-  g[guildID].dispatcher = await connection.playStream(ytdl("https://www.youtube.com/watch?v=" + g[guildID].playQueue[0].id, {filter: "audioonly"}));
+  g[guildID].dispatcher = await connection.playStream(ytdl("https://www.youtube.com/watch?v=" + g[guildID].playQueue[0].id, {filter: "audioonly"}), {passes: 5});
   g[guildID].nowPlaying = g[guildID].playQueue[0];
   g[guildID].playQueue.shift();
   

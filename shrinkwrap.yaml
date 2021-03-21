@@ -1,15 +1,15 @@
 dependencies:
-  discord.js: 11.4.2
-  enmap: 4.8.2
+  discord.js: 11.5.1
+  enmap: 4.8.7
   express: 4.16.4
   get-youtube-id: 1.0.1
   moment: 2.24.0
-  mongoose: 5.4.20
+  mongoose: 5.5.12
   opusscript: 0.0.6
   request: 2.88.0
   simple-youtube-api: 5.1.1
   string-similarity: 3.0.0
-  ytdl-core: 0.29.1
+  ytdl-core: 0.29.2
   ytpl: 0.1.14
 packages:
   /accepts/1.3.5:
@@ -50,12 +50,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-jp/uFnooOiO+L211eZOoSyzpOITMXx1rBITauYykG3BRYPu8h0UcxsPNB04RR5vo4Tyz3+ay17tR6JVf9qzYWg==
-  /async/2.6.1:
+  /async/2.6.2:
     dependencies:
       lodash: 4.17.11
     dev: false
     resolution:
-      integrity: sha512-fNEiL2+AZt6AlAw/29Cr0UDe4sRAHCpEHh54WMz+Bb7QfNcFw4h3loofyJpLeQs4Yx7yuqu/2dLgM5hKOs6HlQ==
+      integrity: sha512-H1qVYh1MYhEEFLsP97cVKqCGo7KfCyTt6uEWqsTBr9SO84oK9Uwbyd/yCW+6rKJLHksBNUVWZDAjfS+Ccx0Bbg==
   /asynckit/0.4.0:
     dev: false
     resolution:
@@ -181,26 +181,26 @@ packages:
     dev: false
     resolution:
       integrity: sha1-l4hXRCxEdJ5CBmE+N5RiBYJqvYA=
-  /discord.js/11.4.2:
+  /discord.js/11.5.1:
     dependencies:
       long: 4.0.0
       prism-media: 0.0.3
       snekfetch: 3.6.4
       tweetnacl: 1.0.1
-      ws: 4.1.0
+      ws: 6.2.1
     dev: false
     engines:
       node: '>=6.0.0'
     peerDependencies:
-      bufferutil: ^3.0.3
+      '@discordjs/uws': ^10.149.0
+      bufferutil: ^4.0.0
       erlpack: discordapp/erlpack
       libsodium-wrappers: ^0.7.3
       node-opus: ^0.2.7
       opusscript: ^0.0.6
       sodium: ^2.0.3
-      uws: ^9.14.0
     resolution:
-      integrity: sha512-MDwpu0lMFTjqomijDl1Ed9miMQe6kB4ifKdP28QZllmLv/HVOJXhatRgjS8urp/wBlOfx+qAYSXcdI5cKGYsfg==
+      integrity: sha512-tGhV5xaZXE3Z+4uXJb3hYM6gQ1NmnSxp9PClcsSAYFVRzH6AJH74040mO3afPDMWEAlj8XsoPXXTJHTxesqcGw==
   /ecc-jsbn/0.1.2:
     dependencies:
       jsbn: 0.1.1
@@ -218,14 +218,14 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha1-rT/0yG7C0CkyL1oCw6mmBslbP1k=
-  /enmap/4.8.2:
+  /enmap/4.8.7:
     dependencies:
       lodash: 4.17.11
     dev: false
     peerDependencies:
       better-sqlite-pool: 'github:eslachance/better-sqlite-pool'
     resolution:
-      integrity: sha512-hf96xrwvwJBDwlZJx4LWFQIwBIQ9gajyNCuy/XfP5xvfzQ+7jhcw+Q3ZROtTVNDU0FpVIdvYhlnoKoeLCVwnfA==
+      integrity: sha512-uDdns7BXSohCQSFO+5RGgJQlgIgKWUHoLY0IPdXmiz90OdlfW+e2SOFAsuaXDCJxdXeKGcJJ9JUvv3wIwF80/Q==
   /escape-html/1.0.3:
     dev: false
     resolution:
@@ -518,56 +518,57 @@ packages:
     dev: false
     resolution:
       integrity: sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg==
-  /mongodb-core/3.1.11:
+  /mongodb-core/3.2.6:
     dependencies:
       bson: 1.1.1
       require_optional: 1.0.1
       safe-buffer: 5.1.2
     dev: false
     optionalDependencies:
-      saslprep: 1.0.2
+      saslprep: 1.0.3
     resolution:
-      integrity: sha512-rD2US2s5qk/ckbiiGFHeu+yKYDXdJ1G87F6CG3YdaZpzdOm5zpoAZd/EKbPmFO6cQZ+XVXBXBJ660sSI0gc6qg==
-  /mongodb/3.1.13:
+      integrity: sha512-i+XRVjur9D0ywGF7cFebOUnALnbvMHajdNhhl3TQuopW6QDE655G8CpPeERbqSqfa3rOKEUo08lENDIiBIuAvQ==
+  /mongodb/3.2.6:
     dependencies:
-      mongodb-core: 3.1.11
+      mongodb-core: 3.2.6
       safe-buffer: 5.1.2
     dev: false
     engines:
       node: '>=4'
     resolution:
-      integrity: sha512-sz2dhvBZQWf3LRNDhbd30KHVzdjZx9IKC0L+kSZ/gzYquCF5zPOgGqRz6sSCqYZtKP2ekB4nfLxhGtzGHnIKxA==
+      integrity: sha512-qnHc4tjEkHKemuzBq9R7ycYnhFE0Dlpt6+n6suoZp2DcDdqviQ+teloJU24fsOw/PLmr75yGk4mRx/YabjDQEQ==
   /mongoose-legacy-pluralize/1.0.2:
     dev: false
     peerDependencies:
       mongoose: '*'
     resolution:
       integrity: sha512-Yo/7qQU4/EyIS8YDFSeenIvXxZN+ld7YdV9LqFVQJzTLye8unujAWPZ4NWKfFA+RNjh+wvTWKY9Z3E5XM6ZZiQ==
-  /mongoose/5.4.20:
+  /mongoose/5.5.12:
     dependencies:
-      async: 2.6.1
+      async: 2.6.2
       bson: 1.1.1
       kareem: 2.3.0
-      mongodb: 3.1.13
-      mongodb-core: 3.1.11
+      mongodb: 3.2.6
+      mongodb-core: 3.2.6
       mongoose-legacy-pluralize: 1.0.2
-      mpath: 0.5.1
+      mpath: 0.6.0
       mquery: 3.2.0
       ms: 2.1.1
       regexp-clone: 0.0.1
       safe-buffer: 5.1.2
+      sift: 7.0.1
       sliced: 1.0.1
     dev: false
     engines:
       node: '>=4.0.0'
     resolution:
-      integrity: sha512-CyybxMQbCaq6jvbroamS5mPfFbxTOLLpdpkQrk1cj7Az1TX+mBbcCVhz+7XElfTMIOb58ah9O+EXmZJsLPD3Lg==
-  /mpath/0.5.1:
+      integrity: sha512-G6KfSHfxfoBw7zpRRdbG1GzLZSkY71nY3CMHMMfg5o+xVAGc3Q78Qu+kA3P+Ka15KHLu6LNyvAc1Zvtv1JhGfw==
+  /mpath/0.6.0:
     dev: false
     engines:
       node: '>=4.0.0'
     resolution:
-      integrity: sha512-H8OVQ+QEz82sch4wbODFOz+3YQ61FYz/z3eJ5pIdbMEaUzDqA268Wd+Vt4Paw9TJfvDgVKaayC0gBzMIw2jhsg==
+      integrity: sha512-i75qh79MJ5Xo/sbhxrDrPSEG0H/mr1kcZXJ8dH6URU5jD/knFxCVqVC/gVSW7GIXL/9hHWlT9haLbCXWOll3qw==
   /mquery/3.2.0:
     dependencies:
       bluebird: 3.5.1
@@ -732,7 +733,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
-  /saslprep/1.0.2:
+  /saslprep/1.0.3:
     dependencies:
       sparse-bitfield: 3.0.3
     dev: false
@@ -740,7 +741,7 @@ packages:
       node: '>=6'
     optional: true
     resolution:
-      integrity: sha512-4cDsYuAjXssUSjxHKRe4DTZC0agDwsCqcMqtJAQPzC74nJ7LfAJflAtC1Zed5hMzEQKj82d3tuzqdGNRsLJ4Gw==
+      integrity: sha512-/MY/PEMbk2SuY5sScONwhUDsV2p77Znkb/q3nSVstq/yQzYJOH/Azh29p9oJLsl3LnQwSvZDKagDGBsBwSooag==
   /sax/1.2.4:
     dev: false
     resolution:
@@ -785,6 +786,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-BvE/TwpZX4FXExxOxZyRGQQv651MSwmWKZGqvmPcRIjDqWub67kTKuIMx43cZZrS/cBBzwBcNDWoFxt2XEFIpQ==
+  /sift/7.0.1:
+    dev: false
+    resolution:
+      integrity: sha512-oqD7PMJ+uO6jV9EQCl0LrRw1OwsiPsiFQR5AR30heR+4Dl7jBBbDLnNvWiak20tzZlSE1H7RB30SX/1j/YYT7g==
   /simple-youtube-api/5.1.1:
     dependencies:
       iso8601-duration: 1.2.0
@@ -912,14 +917,13 @@ packages:
       '0': node >=0.6.0
     resolution:
       integrity: sha1-OhBcoXBTr1XW4nDB+CiGguGNpAA=
-  /ws/4.1.0:
+  /ws/6.2.1:
     dependencies:
       async-limiter: 1.0.0
-      safe-buffer: 5.1.2
     dev: false
     resolution:
-      integrity: sha512-ZGh/8kF9rrRNffkLFV4AzhvooEclrOH0xaugmqGsIfFgOE/pIz4fMc4Ef+5HSQqTEug2S9JZIWDR47duDSLfaA==
-  /ytdl-core/0.29.1:
+      integrity: sha512-GIyAXC2cB7LjvpgMt9EKS2ldqr0MTrORaleiOno6TweZ6r3TKtoFQWay/2PceJ3RuBasOHzXNn5Lrw1X0bEjqA==
+  /ytdl-core/0.29.2:
     dependencies:
       html-entities: 1.2.1
       m3u8stream: 0.6.2
@@ -929,7 +933,7 @@ packages:
     engines:
       node: '>=6'
     resolution:
-      integrity: sha512-J/TW3rupqE6y+TczHTTFjuwf23tweA9fasmnbU/5yYH0O2IRFLcwgHbbvEPt3t8mtXWGX207+TWH7uuJpB1FKQ==
+      integrity: sha512-rQTxqxF09tKGgWxVtvFfi6ga1KWcHNbUGz09yTklirhqQlsIYvaDFCEhJ0K/RlzMH12FquAAMzh+Qi35fkwbFQ==
   /ytpl/0.1.14:
     dependencies:
       html-entities: 1.2.1
@@ -942,15 +946,15 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
-  discord.js: ^11.4.2
-  enmap: ^4.8.2
+  discord.js: ^11.5.1
+  enmap: ^4.8.6
   express: ^4.16.4
   get-youtube-id: ^1.0.1
   moment: ^2.24.0
-  mongoose: ^5.4.20
+  mongoose: ^5.5.12
   opusscript: ^0.0.6
   request: ^2.88.0
   simple-youtube-api: ^5.1.1
   string-similarity: ^3.0.0
-  ytdl-core: ^0.29.0
+  ytdl-core: ^0.29.2
   ytpl: ^0.1.14

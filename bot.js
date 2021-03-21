@@ -17,7 +17,6 @@ mongoose.connect(process.env.MONGOURL, {
 
 app.listen(process.env.PORT);
 app.get("/", (request, response) => {
-  console.log(Date.now() + " Ping Received");
   response.sendStatus(200)
 });
 
@@ -72,7 +71,7 @@ client.on("message", async message => {
   let command = content[0];
   let args = content.slice(1);
   let prefix = 'h!!';
-  if (message.guild) { await Guild.findOne({ guildID: message.guild.id }, (err, guild) => { prefix = guild && guild.prefix ? guild.prefix : "h!!"; }) } else { prefix = "h!!" };
+    if (message.guild) { await Guild.findOne({ guildID: message.guild.id }, (err, guild) => { prefix = guild && guild.prefix ? guild.prefix : "h!!"; }) } else { prefix = "h!!" };
   
   if (0 !== message.content.indexOf(prefix)) return;
   
